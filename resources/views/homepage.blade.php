@@ -1,9 +1,11 @@
 @extends('layout.default')
 @section('content')
 <section class="profile-container">
+    <div class="profile-description-container">
+        <p class="profile-description">just<br>some<br>guy</p>
+    </div>
     <div class="profile">
-        <p class="section-title">Rifdi<br>Andzar<br>Nazhara</p>
-        <p class="profile-description">just some guy</p>
+        <p class="profile-title">Rifdi<br>Andzar<br>Nazhara</p>
     </div>
 </section>
 <section class="works-container">
