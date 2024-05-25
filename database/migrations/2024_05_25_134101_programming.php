@@ -12,6 +12,7 @@ return new class extends Migration
     {
         DB::statement("CREATE TABLE IF NOT EXISTS programming (
             id integer primary key,
+            name text,
             link text,
             desc text         
         )STRICT");
@@ -22,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        DB::delete("DELETE FROM programming");
+        DB::statement("DROP TABLE programming");
     }
 };
